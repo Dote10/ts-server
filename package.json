@@ -4,7 +4,9 @@
   "main": ".src/server.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon dist/server.js"
+    "start":"node dist/server.js",
+    "start:dev:compile": "tsc -w",
+    "start:dev": "nodemon dist/server.js"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
