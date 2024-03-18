@@ -6,17 +6,17 @@ const router = (0, express_1.Router)();
 /**
  * 새로운 toDo를 생성한다.
  */
-router.post('/', todo_1.createTodo);
+router.post('', todo_1.createTodo);
 /**
  * 존재하는 모든 toDo를 가져온다.
  */
-router.get('/');
+router.get('', todo_1.getTodos);
 /**
  * 기존의 toDo를 수정
  */
-router.patch('/:id');
+router.patch('/:id', todo_1.updateTodo);
 /**
  * 기존의 toDo를 삭제
  */
-router.delete('/:id');
+router.delete('/:id', todo_1.deleteTodo);
 exports.default = router;
